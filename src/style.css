@@ -21,3 +21,9 @@
     object-fit: cover;
     height: 200px;
 }
+
+.container-video {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
