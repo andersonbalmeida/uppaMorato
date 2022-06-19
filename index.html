@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="src/style.css">
+  <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <ul class="navbar-nav">
         <li><a class="nav-link active" href="#">HOME <span class="sr-only">(current)</span></a></li>
-        <li><a class="nav-link" href="#">QUEM SOMOS</a></li>
+        <li><a class="nav-link" href="#quem-somos">QUEM SOMOS</a></li>
         <li><a class="nav-link" data-toggle="modal" data-target="#apoie-modal" href="#">APOIE</a></li>
         <li><a class="nav-link" href="#">ACESSIBILIDADE</a></li>
       </ul>
@@ -69,8 +71,8 @@
         <article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
           <img class="card-img-top card-posicao-imagem" src="https://blog.caoequilibrado.com/wp-content/uploads/2020/04/como-frear-a-agressividade-do-meu-cao-parte-2-700x365.jpg/100px180/" alt="cachorrinho vira lata de nome Sorriso, preto de porte pequeno e mostrando os dentes">
             <div class="card-body">
-              <h5 class="card-title">Sorriso</h5>
-              <p class="card-text">Sorriso tem cerca de 2 anos, um cachorrinho simpatico e amistoso, mas não o provoque</p>
+              <h5 class="card-title" id="adocoes_titulo"></h5>
+              <p class="card-text" id="adocoes_descricao"></p>
               <a href="#" class="btn btn-primary">Tenho Interesse</a>
           </div>
         </article>
@@ -85,7 +87,14 @@
         </article>
       </div>
     </section>
-   
+
+    <section id="quem-somos">
+      <h1 class="titulo pt-4">Conheça nosso trabalho</h1>
+      <p class="text-center text-black-50">A UPPA atua desde 2013 na causa animal, adotando animais no municipio</p>
+      Somos uma equipe de resgate de cães de rua. Nosso canil tem sede própria em Francisco Morato. Trata-se de trabalho voluntario na causa animal. Vivemos de doações e apoio. Se quiser ajudar pode apadrinhar animais resgatados enviando remédios, ração etc ou fazendo uma doação pra que possamos manter a Upaa funcionando.
+
+    </section>
+
 </main>
 
 <footer class="bg-secondary p-3">
@@ -123,6 +132,10 @@
     </div>
   </div>
 </div>
+
+<script>
+
+</script>
 
 </body>
 </html>
