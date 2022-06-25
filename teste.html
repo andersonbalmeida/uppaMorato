@@ -1,10 +1,52 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Detalhes do PET via API</title>
+        <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+        <script src="main.js"></script>
     </head>
 
     <body>
-        <p>Ola, isso é um simples teste</p>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+              <a class="navbar-brand" href="/home/anderson/Documentos/UPAA/index.html"> <img src="/home/anderson/Área de Trabalho/UPAA/src/img/logo.jpeg" alt="..."></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+            </header>
+
+    <br>
+    <br>
+          
+        <section id="dados da api">
+            <strong>Nome</strong>
+            <p id="nome"></p>
+            <strong>Cor</strong>
+            <p id="cor"></p>
+            <strong>Espécie</strong>
+            <p id="especie"></p>
+            <strong>Idade</strong>
+            <p id="idade"></p>        
+            <strong>Descrição</strong>
+            <p id="observacao"></p>
+            <strong>Raça</strong>
+            <p id="raca"></p>
+            <strong>Sexo</strong>
+            <p id="sexo"></p>
+        </section>
+    <br>
+    <br>
+
+Ajude esse Pet a encontrar um lar compartilhando em seu Facebook
+        <div id="fb-root"></div>
+
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v14.0" nonce="xd21x5YJ"></script>
+        <div class="fb-share-button" data-href="https://www.facebook.com/EQUIPEUPAA/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FEQUIPEUPAA%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+        
 
     </body>
 
