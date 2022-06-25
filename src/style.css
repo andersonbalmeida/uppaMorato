@@ -9,8 +9,8 @@
 
 .imagem-carrossel {
     object-fit: cover;
-    object-position: 0 10%;
-    height: 400px;
+    object-position: 0 8%;
+    height: 290px;
 }
 
 .borda-cor-especial {
@@ -26,4 +26,9 @@
     display: grid;
     grid-template-columns: 1fr;
     height: 100vh;
+}
+
+.fa-social {
+    height: 50px;
+    width: 50px;
 }
