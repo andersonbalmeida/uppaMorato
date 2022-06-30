@@ -1,11 +1,11 @@
   
   function getUser() {
-    axios.get(`https://upaa-55b4e-default-rtdb.firebaseio.com/pets/id1.json`)
+    axios.get(`https://upaa-55b4e-default-rtdb.firebaseio.com/pets.json`)
       .then(response => {
         const data = response.data
   
-        adocoes_titulo.textContent = data.nome
-        adocoes_descricao.textContent = data.observacao
+        renderResults.textContent = JSON.stringify(data)
+        
       })
       .catch(error => console.log(error))
   }
